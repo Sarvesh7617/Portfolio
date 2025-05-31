@@ -131,25 +131,36 @@ const Home=()=>{
                     />
                 </section>
 
-                <section className="w-1/2 text-center md:text-left mt-6">
-                    <h1 className="md:text-4xl mb-4"><strong>Hi , it's <span className="text-red-500">
-                        <TypeAnimation
-                        sequence={
-                            [
-                                "DSA Marster",1000,
-                                "Full Stack Developer",1000,
-                                "App Developer",1000,
-                                "Next.js",1000,
-                                "SQL Knowlegde",1000
-                            ]
-                        }    
+                <section className="w-1/2 text-center md:text-left mt-10">
+                    <h1 className="md:text-4xl mb-4">
+                        <strong>
+                        Hi, it's{" "}
+                        <span className="text-red-500">
+                            <TypeAnimation
+                            sequence={[
+                                "Front End Developer", 1000,
+                                "Full Stack Developer", 1000,
+                                "DSA Expert", 1000,
+                                "Machine Learning Enthusiast", 1000,
+                                "Next.js & SQL", 1000,
+                            ]}
                             speed={10}
-                            style={{fontStyle:"1re"}}
+                            style={{ fontStyle: "normal" }}
                             repeat={Infinity}
-                        />
-                        </span></strong></h1>
-                    <h3 className="md:text-2xl sm:text-3xl font-semibold mb-4">I am a <span className="text-purple-500">Software Engineer</span></h3>
-                    <p className="mb-7 md:mb-0"><strong>Sarvesh Soni</strong> is a passionate full-stack develiper , DSA (Data Structures and Algorithms) expert and <strong>App developer also</strong>.A graduate of University of Education & Technology (CSJMU,Kanpur) , Sarvesh specialize in machine learning , SQL , Next.js and full-stack web development. With a strong foundation in both front-end and back-end technologies , he is committed to building scalable application and solving complex coding challenges.<br/><br/>Sarvesh is dedicated to continous learning and delivering innovation solution with a focus on user experience and technical excellence.</p>
+                            />
+                        </span>
+                        </strong>
+                    </h1>
+                    <h3 className="md:text-2xl sm:text-3xl font-semibold mb-4">
+                        I am a <span className="text-purple-500">Software Engineer</span>
+                    </h3>
+                    <p className="mb-7 md:mb-0">
+                        <strong>Sarvesh Soni</strong> is a passionate Front End Developer and Full Stack Developer with strong expertise in Data Structures and Algorithms (DSA). Currently pursuing B.Tech in Computer Science with a specialization in Artificial Intelligence from Chhatrapati Shahu Ji Maharaj University, Kanpur. Sarvesh has experience building scalable web applications using React, Next.js, and Node.js, with proficiency in SQL and NoSQL databases.
+                        <br />
+                        <br />
+                        He is committed to continuous learning, developing innovative solutions, and delivering excellent user experiences through clean, maintainable code and modern technologies.
+                    </p>
+
                     <div className="flex flex-wrap justify-center md:justify-start md:flex-row gap-4 mt-3 mb-4">
                         <a href="https://wa.me/917617878976" target="_blank" title="whatapp page"><i className="fa-brands fa-whatsapp text-4xl border-4 w-16 h-16 text-center pt-2 border-red-500 rounded-full hover:scale-110 sm:bg-transparent bg-green-500 hover:bg-green-500 transition duration-300 cursor-pointer"></i></a>
                         <a href="https://github.com/Sarvesh7617" title="Github page" target="_blank"><i className="fa-brands fa-github text-4xl border-4 w-16 h-16 text-center pt-2 border-red-500 rounded-full hover:scale-110 sm:bg-transparent bg-purple-500 hover:bg-purple-500 transition duration-300 cursor-pointer"></i></a>
@@ -222,7 +233,7 @@ const Home=()=>{
                         { src: Face, alt: "face-recorgnition project",link:"https://github.com/springboardmentor136/Visionary-Advanced-Image-Recognition-for-the-Next-Era/tree/main" },
                         { src: Hostel, alt: "Hostel-manage project",link:"https://github.com/Sarvesh7617/Hostel-managemen-Portal" },
                         { src: Disease, alt: "Disease-predict project",link:"https://github.com/Sarvesh7617/Multiple_Disease_Prediction_Using_Machine_Learning" },
-                        { src: weather, alt: "weather project",link:"https://github.com/Sarvesh7617/WeatherNode" },
+                        { src: weather, alt: "weather project",link:"https://weather-node-usi5-74i64podm-sarvesh-soni-s-projects.vercel.app/" },
                         { src: commerce, alt: "e-commerce project",link:"https://github.com/Sarvesh7617/BootStrap_E-commerce_Website" }
                     ].map((item,index)=>(
                         <div
