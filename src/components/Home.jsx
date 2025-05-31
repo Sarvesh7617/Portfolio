@@ -3,7 +3,7 @@ import Myimage from '../assets/Sarvesh.webp';
 import {TypeAnimation} from 'react-type-animation';
 import Java from '../assets/javascript_logo.webp'
 import Html from '../assets/html logo.webp'
-import Css from '../assets/CSS-Logo.webp'
+import Css from '../assets/CSS-logo.webp'
 import reacts from '../assets/react.webp'
 import Cpp from '../assets/cpp logo.webp'
 import appwrite from '../assets/appwrite.webp'
