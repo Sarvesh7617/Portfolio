@@ -11,7 +11,7 @@ const Layout=()=>{
         <>
             <Particle/>
             <Header/>
-                <Outlet/>
+                <Outlet/> 
                 <ToastContainer />
                 <GototopBtn/>
             <Footer/>

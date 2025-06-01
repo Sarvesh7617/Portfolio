@@ -7,7 +7,6 @@ const Particle=()=>{
   const [init, setInit] = useState(false);
 
   useEffect(() => {
-    console.log("init");
     initParticlesEngine(async (engine) => {
       await loadFull(engine);
     }).then(() => {
@@ -24,7 +23,7 @@ const Particle=()=>{
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           style={{
-             zIndex: 0
+            zIndex:50 
           }}
           options={{
             fpsLimit: 120,

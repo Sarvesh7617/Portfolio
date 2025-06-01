@@ -122,9 +122,8 @@ const Home=()=>{
 
 
     return(
-        <div className="relative z-10 dark:bg-gray-900 dark:text-white">
-
-            <div id="home" className="flex dark:bg-gray-900 dark:text-white flex-col md:flex-row min-h-screen px-6 items-center justify-center pt-[100px] md:pt-0">
+        <div className="dark:bg-gray-900 dark:text-white">
+            <div id="home" className="relative flex flex-col md:flex-row min-h-screen px-6 items-center justify-center pt-[100px] md:pt-0">
                 <section className="md:w-1/2">
                     <img 
                         src={Myimage} 
@@ -227,7 +226,7 @@ const Home=()=>{
                     ))}
                 </div>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
-            <div className="mt-5 mb-5 w-1/2 md:w-fit m-auto">
+            <div className="relative mt-5 mb-5 w-1/2 md:w-fit m-auto">
                 <h2 className="text-center font-bold text-xl md:text-4xl">My <span className="text-purple-600">Project</span></h2>
                 <p className="text-center mt-3">Here are some of my recent project.Each project was carefully crafted with attention to detail,performance and user experience</p>
                 <div id="project" className="grid grid-cols md:grid-cols-3 gap-6 mt-10 mb-10 md:w-11/12 m-auto">
@@ -299,7 +298,7 @@ const Home=()=>{
                         {certificate:trainning,alt:"web trainning certificate"}
                     ]}/>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
-            <div id="contact" className="mt-5 w-6/12 m-auto">
+            <div id="contact" className="relative mt-5 w-6/12 m-auto">
                 <h2 className="text-center font-bold text-xl md:text-4xl mb-2 sm:mb-8">Get In <span className="text-rose-500">Touch</span></h2>
                 <div className="flex flex-col md:flex-row items-start justify-evenly gap-5 w-full overflow-hidden">
 
