@@ -34,6 +34,7 @@ import { useState } from "react";
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 
+
 const Home=()=>{
     const {register,handleSubmit,reset,formState: { errors }}=useForm();
     const [loading,setLoading]=useState(false);
@@ -121,7 +122,8 @@ const Home=()=>{
 
 
     return(
-        <div className="dark:bg-gray-900 dark:text-white">
+        <div className="relative z-10 dark:bg-gray-900 dark:text-white">
+
             <div id="home" className="flex dark:bg-gray-900 dark:text-white flex-col md:flex-row min-h-screen px-6 items-center justify-center pt-[100px] md:pt-0">
                 <section className="md:w-1/2">
                     <img 
