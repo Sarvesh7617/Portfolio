@@ -81,7 +81,7 @@ npm run dev
 
 
 
-#### 📄 License (Optional)
+#### 📄 License
 If you want to allow others to use or modify your code, add:
 
 ```md
