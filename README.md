@@ -23,17 +23,32 @@ This is my personal portfolio website built with **Vite + React**, showcasing my
 
 
 
+## 🚀 Tech Stack
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 🧭 React Router DOM (for Routing)
+- 📦 npm
+
+
 ## 🛠️ Installation
 
+To run this project locally:  
+
+1️. Clone the repository:  
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/your-portfolio.git
-
-# Navigate into the folder
+git clone https://github.com/Sarvesh7617/BootStrap_E-commerce_Website.git
+```
+2. Navigate to the project directory:
+```bash
 cd your-portfolio
-
-# Install dependencies
+```
+3. Install dependencies
+```bash
 npm install
-
-# Start the development server
+```
+4. Install dependencies
+```bash
 npm run dev
+```
