@@ -22,6 +22,7 @@ import skill from '../assets/soft skill.webp'
 import infosys from '../assets/tcs intern.webp'
 import web from '../assets/web intern.webp'
 import trainning from '../assets/web trainning.webp'
+import Blog from '../assets/Blog.webp'
 import { FaArrowRight } from "react-icons/fa6";
 import '../assets/style.css'
 import Carousel from "./Carousal";
@@ -33,6 +34,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { useState } from "react";
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
+
 
 
 const Home=()=>{
@@ -173,12 +176,46 @@ const Home=()=>{
                 </section> 
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
             <div className="mt-5 mb-5 w-1/2 sm:w-fit m-auto">
-                <h2 id="skill" className="text-center font-bold text-xl  md:text-4xl">Featured <span className="text-blue-600">Skill</span></h2>
-                    <ul className="flex flex-wrap justify-center gap-5 mt-10 mb-10 slow-bounce text-center">
+                <motion.h2 
+                    id="skill" 
+                    className="text-center font-bold text-xl  md:text-4xl"
+                    initial={{
+                        opacity:0,
+                        scale:0.5
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1
+                    }}
+                    viewport={{ 
+                        once: true
+                    }}
+                    transition={{ duration: 1.5 }}
+                >
+                    Featured <span className="text-blue-600">Skill</span>
+                </motion.h2>
+                <motion.ul 
+                    className="flex flex-wrap justify-center gap-5 mt-10 mb-10 slow-bounce text-center"
+                    initial={{
+                        opacity:0,
+                        scale:0.2,
+                        y:50
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1,
+                        y:0
+                    }}
+                    viewport={{ 
+                        once: true,
+                        amount:0.8
+                    }}
+                    transition={{ duration: 1.5 }}
+                >
                         <li className="border-2 border-t-teal-400 border-b-teal-400 border-l-blue-500 border-r-blue-500 p-2 sm:p-4 rounded-md text-[#B8860B] text-xl sm:text-2xl"><strong>Web Developer</strong></li>
                         <li className="border-2 border-t-teal-400 border-b-teal-400 border-l-blue-500 border-r-blue-500 p-2 sm:p-4 rounded-md text-[#B8860B] text-xl sm:text-2xl"><strong>Front-end developer</strong></li>
                         <li className="border-2 border-t-teal-400 border-b-teal-400 border-l-blue-500 border-r-blue-500 p-2 sm:p-4 rounded-md text-[#B8860B] text-xl sm:text-2xl"><strong>C++ and Python Coder</strong></li>
-                    </ul> 
+                </motion.ul> 
                 <div className="grid grid-cols-1 sm:grid-cols-2 justify-items-center md:flex sm:justify-center md:flex-wrap gap-y-2 sm:gap-2">
                     {[
                         { src: Java, alt: "Java image" },
@@ -188,64 +225,190 @@ const Home=()=>{
                         { src: appwrite, alt: "appwrite image" },
                         { src: Bootstrap, alt: "Bootstrap image" },
                     ].map((item, index) => (
-                        <div
+                        <motion.div
                             key={index}
                             className="bg-white p-4 rounded-lg shadow-lg shadow-black/40 border border-blue-100"
+                            initial={{
+                                opacity:0,
+                                scale:0.2,
+                                y:50
+                            }}
+                            whileInView={{ 
+                                opacity: 1,
+                                scale:1,
+                                y:0
+                            }}
+                            viewport={{ 
+                                once: true,
+                                amount:0.5
+                            }}
+                            transition={{ duration: 1 }}
                         >
                         <img
                             src={item.src}
                             alt={item.alt}
                             className={`max-w-16 max-h-16 ${item.alt=="React image" || item.alt=="Java image" || item.alt=="appwrite image"?'rounded-md':'rounded-full'} ${item.alt=="Bootstrap image"? "h-[60px]": ""}`}
                         />
-                        </div>
+                        </motion.div>
                     ))}
-                    <div className="bg-white py-3 max-w-[100px] rounded-lg shadow-lg shadow-black/40 border border-blue-100">
+                    <motion.div 
+                        className="bg-white py-3 max-w-[100px] rounded-lg shadow-lg shadow-black/40 border border-blue-100"
+                        initial={{
+                            opacity:0,
+                            scale:0.2,
+                            y:50
+                        }}
+                        whileInView={{ 
+                            opacity: 1,
+                            scale:1,
+                            y:0
+                        }}
+                        viewport={{ 
+                            once: true,
+                            amount:0.5
+                        }}
+                        transition={{ duration: 1 }}
+                    >
                         <img src={Css} className="max-w-30 rounded-full"/>
-                    </div>
-                    <div className="bg-white py-3 max-w-[100px] h-[100px] rounded-lg shadow-lg shadow-black/40 border border-blue-100">
+                    </motion.div>
+                    <motion.div 
+                      className="bg-white py-3 max-w-[100px] h-[100px] rounded-lg shadow-lg shadow-black/40 border border-blue-100"
+                      initial={{
+                            opacity:0,
+                            scale:0.2,
+                            y:50
+                        }}
+                        whileInView={{ 
+                            opacity: 1,
+                            scale:1,
+                            y:0
+                        }}
+                        viewport={{ 
+                            once: true,
+                            amount:0.5
+                        }}
+                        transition={{ duration: 1 }}
+                    >
                         <img src={Python} className="max-w-15 mt-2"/>
-                    </div>
+                    </motion.div>
                 </div>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
             <div id="programming-language" className="mt-5 mb-5 w-1/2 m-auto">
-                <h2 className="text-center text-xl md:text-3xl md:text-4xl font-semibold mb-4">Programming <span className="text-red-400">Language</span></h2>
+                <motion.h2 
+                  className="text-center text-xl md:text-3xl md:text-4xl font-semibold mb-4"
+                  initial={{
+                        opacity:0,
+                        scale:0.2
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1
+                    }}
+                    viewport={{ 
+                        once: true
+                    }}
+                    transition={{ duration: 1 }}
+                >
+                    Programming <span className="text-red-400">Language</span>
+                </motion.h2>
                 <div>
                     {[
                         { name: "Javascript", progress: "90" },
                         { name: "HTML", progress: "95" },
                         { name: "CSS/TAILWIND", progress: "95" },
                     ].map((lang, index) => (
-                    <div className="m-auto mb-5 sm:w-full" key={index}>
+                    <motion.div 
+                      className="m-auto mb-5 sm:w-full" key={index}
+                      initial={{
+                        opacity:0,
+                        scale:0.2,
+                        y:50
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1,
+                        y:0
+                    }}
+                    viewport={{ 
+                        once: true,
+                        amount:0.3
+                    }}
+                    transition={{ duration: 1.5 }}
+                    >
                         <p className="text-lg font-medium text-center">{lang.name}</p>
                         <div
                             className="h-4 rounded-full bg-gradient-to-r w-0 from-purple-600 to-orange-500 transition-all duration-1000"
                             data-progress={lang.progress}
                         >
                         </div>
-                    </div>
+                    </motion.div>
                     ))}
                 </div>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
             <div className="relative mt-5 mb-5 w-1/2 md:w-fit m-auto">
-                <h2 className="text-center font-bold text-xl md:text-4xl">My <span className="text-purple-600">Project</span></h2>
+                <motion.h2 
+                  className="text-center font-bold text-xl md:text-4xl"
+                  initial={{
+                        opacity:0,
+                        scale:0.2
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1
+                    }}
+                    viewport={{ 
+                        once: true
+                    }}
+                    transition={{ duration: 1 }}
+                >
+                    My <span className="text-purple-600">Project</span>
+                </motion.h2>
                 <p className="text-center mt-3">Here are some of my recent project.Each project was carefully crafted with attention to detail,performance and user experience</p>
                 <div id="project" className="grid grid-cols md:grid-cols-3 gap-6 mt-10 mb-10 md:w-11/12 m-auto">
                     {[
+                        { src: Blog, alt: "Blog-Post project",link:"https://full-stack-blogging-platform-pied.vercel.app/" },
                         { src: Face, alt: "face-recorgnition project",link:"https://github.com/springboardmentor136/Visionary-Advanced-Image-Recognition-for-the-Next-Era/tree/main" },
                         { src: Hostel, alt: "Hostel-manage project",link:"https://github.com/Sarvesh7617/Hostel-managemen-Portal" },
                         { src: Disease, alt: "Disease-predict project",link:"https://github.com/Sarvesh7617/Multiple_Disease_Prediction_Using_Machine_Learning" },
                         { src: weather, alt: "weather project",link:"https://weather-node-usi5-74i64podm-sarvesh-soni-s-projects.vercel.app/" },
                         { src: commerce, alt: "e-commerce project",link:"https://github.com/Sarvesh7617/BootStrap_E-commerce_Website" }
                     ].map((item,index)=>(
-                        <div
+                        <motion.div
                             key={index}
-                            className="bg-white dark:bg-gray-600 py-1 px-1 sm:p-4 rounded-lg shadow-lg shadow-black/40 border border-blue-100 flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110"
+                            className="bg-white dark:bg-gray-600 py-1 px-1 sm:p-4 rounded-lg shadow-lg shadow-black/40 border border-blue-100 flex flex-col items-center justify-center"
+                            initial={{ 
+                                opacity: 0, 
+                                scale: 0.8,
+                                y:50
+                            }}
+                            whileInView={{ 
+                                opacity: 1, 
+                                scale: 1,
+                                y:0 
+                            }}
+                            whileHover={{ 
+                                scale: 1.1,
+                                transition: { duration: 0.3 }
+                            }}
+                            viewport={{ 
+                                once: true, 
+                                amount: 0.3 
+                            }}
+                            transition={{ 
+                                duration: 1
+                            }}
                         >
                             <img
                             src={item.src}
                             alt={item.alt}
                             className="sm:h-30 mb-4"
                             />
+                            {(item.src===Blog) && (
+                            <div className="text-justify w-fit">
+                                <h1 className="text-center font-bold">Full-Stack Blogging Platform using React & Appwrite</h1>
+                                <p>A full-stack blogging platform built with React.js and Appwrite, featuring secure authentication, rich text editing with TinyMCE, and image uploads. Optimized for responsiveness and deployed on Vercel for fast performance.</p>
+                            </div>
+                            )}
                             {(item.src===Face) && (
                             <div className="text-justify w-fit">
                                 <h1 className="text-center font-bold">Real-Time Facial Recognition System</h1>
@@ -279,13 +442,46 @@ const Home=()=>{
                             <a href={item.link} target="_blank" className="border-2 border-black rounded-md text-blue-500 text-sm md:text-normal font-semibold p-1 hover:cursor-pointer hover:scale-105 transition-transform duration-300 mt-2">
                                 DEMO
                             </a>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
                 <a href="https://github.com/Sarvesh7617" target="_blank" title="github link" className="m-auto border border-white p-2 w-fit rounded-xl bg-purple-400 flex items-center hover:scale-110 hover:bg-purple-500 duration-300 transition-transform">Check My Github <span className="ml-2 mt-1"><FaArrowRight /></span> </a>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
             <div className="mt-5 mb-10 w-11/12 m-auto">
-                <h2 className="text-center font-bold text-xl md:text-4xl mb-2 sm:mb-8">Certificates</h2>
+                <motion.h2 
+                  className="text-center font-bold text-xl md:text-4xl mb-2 sm:mb-8"
+                  initial={{
+                        opacity:0,
+                        scale:0.2
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1
+                    }}
+                    viewport={{ 
+                        once: true
+                    }}
+                    transition={{ duration: 1 }}
+                >
+                    Certificates
+                </motion.h2>
+                <motion.div
+                    initial={{
+                        opacity:0,
+                        scale:0.2,
+                        y:50
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1,
+                        y:0
+                    }}
+                    viewport={{ 
+                        once: true,
+                        amount:0.5
+                    }}
+                    transition={{ duration: 1 }}
+                >
                     <Carousel 
                     slides={[
                         {certificate:tool,alt:"AI tools certificate"},
@@ -297,12 +493,43 @@ const Home=()=>{
                         {certificate:web,alt:"web intern certificate"},
                         {certificate:trainning,alt:"web trainning certificate"}
                     ]}/>
+                </motion.div>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
             <div id="contact" className="relative mt-5 w-6/12 m-auto">
-                <h2 className="text-center font-bold text-xl md:text-4xl mb-2 sm:mb-8">Get In <span className="text-rose-500">Touch</span></h2>
+                <motion.h2 
+                  className="text-center font-bold text-xl md:text-4xl mb-2 sm:mb-8"
+                  initial={{
+                        opacity:0,
+                        scale:0.2
+                    }}
+                    whileInView={{ 
+                        opacity: 1,
+                        scale:1
+                    }}
+                    viewport={{ 
+                        once: true
+                    }}
+                    transition={{ duration: 1 }}
+                >
+                    Get In <span className="text-rose-500">Touch</span>
+                </motion.h2>
                 <div className="flex flex-col md:flex-row items-start justify-evenly gap-5 w-full overflow-hidden">
-
-                    <div className="bg-black/30 text-white p-5 rounded-lg flex flex-col items-center w-full md:w-1/2 md:mt-16">
+                    <motion.div 
+                      className="bg-black/30 text-white p-5 rounded-lg flex flex-col items-center w-full md:w-1/2 md:mt-16"
+                      initial={{ 
+                        opacity: 0, 
+                        x: -100 
+                    }}
+                      whileInView={{ 
+                        opacity: 1, 
+                        x: 0 
+                    }}
+                    viewport={{ 
+                        once: true, 
+                        amount: 0.3
+                    }}
+                      transition={{ duration: 1 }}
+                    >
                     <p className="font-semibold mb-5 text-center w-full">Contact Information</p>
                     <div className="space-y-4 w-full sm:w-fit">
 
@@ -338,11 +565,24 @@ const Home=()=>{
                         <a href="https://wa.me/917617878976" target="_blank" title="whatapp page"><i className="fa-brands fa-whatsapp text-4xl text-center hover:scale-110 sm:bg-transparent text-green-500 transition duration-300 cursor-pointer"></i></a>
                         <a href="mailto:shubhamsoni1231@rediffmail.com" title="mail"><i className="fas fa-envelope text-3xl text-red-500 text-center hover:scale-110 sm:bg-transparent transition duration-300 cursor-pointer"></i></a>
                     </div>
-                    </div>
+                    </motion.div>
 
-                    <form
+                    <motion.form
                         onSubmit={handleSubmit(Submit)}
                         className="bg-black/30 flex flex-col items-start p-5 rounded-lg w-full md:w-1/2 mb-10"
+                        initial={{ 
+                            opacity: 0, 
+                            x: 100 
+                        }}
+                        whileInView={{ 
+                            opacity: 1, 
+                            x: 0 
+                        }}
+                        viewport={{ 
+                            once: true, 
+                            amount: 0.3
+                        }}
+                        transition={{ duration: 1 }}
                     >
                     <p className="text-white text-md font-semibold mb-5 w-full text-center text-center">Send Message</p>
                     <div className="space-y-5 w-full">
@@ -404,7 +644,7 @@ const Home=()=>{
                             )}
                         </button>
                     </div>
-                </form>
+                    </motion.form>
                 </div>
             </div>
         </div>
