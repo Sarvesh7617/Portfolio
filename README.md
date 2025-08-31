@@ -1,4 +1,4 @@
-<img width="1915" height="970" alt="Screenshot 2025-08-31 205245" src="https://github.com/user-attachments/assets/62382585-8d6a-4afc-ba9f-a404bd2ed1cf" /># 💼 My Developer Portfolio
+# 💼 My Developer Portfolio
 
 This is my personal portfolio website built with **Vite + React**, showcasing my projects, skills, and contact information.
 ## 📸 Screenshots
@@ -8,4 +8,5 @@ This is my personal portfolio website built with **Vite + React**, showcasing my
 
 
 ### 📂 Projects Section
-![Projects Section]![Uploading Screenshot 2025-08-31 205421.png…]()
+![Projects Section]<img width="1907" height="974" alt="Screenshot 2025-08-31 205421" src="https://github.com/user-attachments/assets/72e533fc-a973-4ca9-aaeb-ed6343bf3e69" />
+
