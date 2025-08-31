@@ -71,13 +71,10 @@ npm run dev
 │   ├── App.jsx             # Root component
 │   ├── index.css           # Tailwind base styles
 │   └── main.jsx            # Entry point for React
-├── .gitignore              # Git ignored files
-├── README.md               # Project documentation
-├── eslint.config.js        # ESLint configuration
+├── .gitignore              # Git ignored files            
 ├── index.html              # HTML template
 ├── package-lock.json       # Dependency lock file
 ├── package.json            # Project metadata and scripts
-├── postcss.config.js       # PostCSS setup
 ├── tailwind.config.js      # Tailwind CSS configuration
 └── vite.config.js          # Vite bundler configuration
 ```
