@@ -345,7 +345,7 @@ const Home=()=>{
                     ))}
                 </div>
             </div><hr className="border-1 border-black w-1/2 m-auto mt-10"/>
-            <div className="relative mt-5 mb-5 w-1/2 md:w-fit m-auto">
+            <div className="relative mt-5 mb-5 p-10 md:p-0 md:w-1/2 md:w-fit m-auto">
                 <motion.h2 
                   className="text-center font-bold text-xl md:text-4xl"
                   initial={{
@@ -364,7 +364,7 @@ const Home=()=>{
                     My <span className="text-purple-600">Project</span>
                 </motion.h2>
                 <p className="text-center mt-3">Here are some of my recent project.Each project was carefully crafted with attention to detail,performance and user experience</p>
-                <div id="project" className="grid grid-cols md:grid-cols-3 gap-6 mt-10 mb-10 md:w-11/12 m-auto">
+                <div id="project" className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mb-10 md:w-11/12 m-auto">
                     {[
                         { src: Blog, alt: "Blog-Post project",link:"https://full-stack-blogging-platform-pied.vercel.app/" },
                         { src: Face, alt: "face-recorgnition project",link:"https://github.com/springboardmentor136/Visionary-Advanced-Image-Recognition-for-the-Next-Era/tree/main" },
