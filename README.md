@@ -36,7 +36,7 @@ This is my personal portfolio website built with **Vite + React**, showcasing my
 
 To run this project locally:  
 
-1️. Clone the repository:  
+1️. **Clone the repository:  
 ```bash
 git clone https://github.com/Sarvesh7617/BootStrap_E-commerce_Website.git
 ```
