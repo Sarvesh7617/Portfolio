@@ -20,3 +20,20 @@ This is my personal portfolio website built with **Vite + React**, showcasing my
 - Contact form with form validation
 - Dark mode support
 - 🔝 "Go to Top" button for easy navigation
+
+
+
+## 🛠️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-portfolio.git
+
+# Navigate into the folder
+cd your-portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
