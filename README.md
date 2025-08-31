@@ -80,3 +80,11 @@ npm run dev
 ```
 
 
+
+#### 📄 License (Optional)
+If you want to allow others to use or modify your code, add:
+
+```md
+## 📄 License
+
+This project is licensed under the MIT License.
