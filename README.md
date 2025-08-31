@@ -52,3 +52,34 @@ npm install
 ```bash
 npm run dev
 ```
+
+
+## 🔗 Live Website
+
+👉 [Click here to visit my portfolio](https://portfolio-xyik.vercel.app/#project)
+
+
+
+## 📁 Project Structure
+
+```bash
+├── public/                 # Static files served directly
+├── src/                    # Source code
+│   ├── assets/             # Images and media
+│   ├── components/         # Reusable React components
+│   ├── App.css             # App-specific styles
+│   ├── App.jsx             # Root component
+│   ├── index.css           # Tailwind base styles
+│   └── main.jsx            # Entry point for React
+├── .gitignore              # Git ignored files
+├── README.md               # Project documentation
+├── eslint.config.js        # ESLint configuration
+├── index.html              # HTML template
+├── package-lock.json       # Dependency lock file
+├── package.json            # Project metadata and scripts
+├── postcss.config.js       # PostCSS setup
+├── tailwind.config.js      # Tailwind CSS configuration
+└── vite.config.js          # Vite bundler configuration
+```
+
+
