@@ -123,7 +123,8 @@ const Home=()=>{
 }, []);
 
 
-
+    window.scrollTo(0, 0);
+    
     return(
         <div className="dark:bg-gray-900 dark:text-white">
             <div id="home" className="relative flex flex-col md:flex-row min-h-screen px-6 items-center justify-center pt-[100px] md:pt-0">
