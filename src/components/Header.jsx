@@ -1,22 +1,30 @@
 import React, { useState } from "react";
-import {HashLink} from 'react-router-hash-link'
 import Hamburger from 'hamburger-react'
 import ThemeBtn from "./Themebtn";
-import { useLocation } from "react-router-dom";
 
 
 const Header=()=>{
 
     const [open,setOpen]=useState(false);
-    const location=useLocation();
+    const [activeSec,setSection]=useState('home')
+
+    const scrollToSection=(id)=>{
+        let el=document.getElementById(id)
+        console.log(el)
+        if(el)
+        {
+          el.scrollIntoView({behavior:"smooth"})
+          setSection(id);
+        }
+    }
 
     return (
         <> 
         <header className="fixed z-50 dark:bg-gray-600 dark:text-white flex justify-between w-full p-4 bg-white shadow-sm shadow-black/8">
-            <HashLink smooth to="/#home" 
+            <button onClick={() => scrollToSection('home')} 
                 className="flex items-center dark:text-white text-xl pl-10 font-extrabold text-black hover:scale-110 transition-transform duration-300 font-[cursive]">
                 &lt;Sarvesh <span className="text-red-500">Soni</span>/&gt;
-            </HashLink>
+            </button>
             <div className="md:hidden flex items-center gap-3">
                 <ThemeBtn/>
                 <div className="border-2 rounded-lg">
@@ -28,24 +36,24 @@ const Header=()=>{
                 <ul className="flex itmes-center">
                     <ThemeBtn/>
                     <li>
-                        <HashLink smooth to="/#home" className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${location.hash===`#home`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
+                        <button onClick={() => scrollToSection('home')} className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${activeSec===`home`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
                             Home
-                        </HashLink>
+                        </button>
                     </li>
                     <li>
-                        <HashLink smooth to="/#skill" className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${location.hash===`#skill`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
+                        <button onClick={() => scrollToSection('skill')} className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${activeSec===`skill`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
                             Skill
-                        </HashLink>
+                        </button>
                     </li>
                     <li>
-                        <HashLink smooth to="/#project" className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${location.hash===`#project`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
+                        <button onClick={() => scrollToSection('project')} className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${activeSec===`project`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
                             Project
-                        </HashLink>
+                        </button>
                     </li>
                     <li>
-                        <HashLink smooth to="/#contact" className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${location.hash===`#contact`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
+                        <button onClick={() => scrollToSection('contact')} className={`ml-8 dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${activeSec===`contact`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
                             Contact
-                        </HashLink>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -55,9 +63,9 @@ const Header=()=>{
                 <ul className="flex flex-col gap-2">
                     {['home', 'skill', 'project', 'contact'].map((section)=>(
                     <li key={section}>
-                        <HashLink smooth to={`/#${section}`} className={`dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${location.hash===`#${section}`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
+                        <button onClick={() => scrollToSection(`${section}`)} className={`dark:text-white text-lg font-medium hover:border-indigo-500 hover:border-b-2 text-black ${activeSec===`${section}`? "bg-indigo-500 p-1 rounded-lg px-2":""}`}>
                             {section.charAt(0).toUpperCase()+section.slice(1)}
-                        </HashLink>
+                        </button>
                     </li>
                     ))}
                 </ul>

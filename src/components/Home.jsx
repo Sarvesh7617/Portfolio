@@ -97,10 +97,7 @@ const Home=()=>{
     return () => observer.disconnect();
 }, []);
 
-    useEffect(()=>{
-        window.location.hash="";
-        window.scrollTo(0, 0);
-    },[])
+    window.scrollTo(0, 0);
     
     return(
         <div className="dark:bg-gray-900 dark:text-white">
