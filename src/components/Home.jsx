@@ -77,31 +77,6 @@ const Home=()=>{
     });
     }
 
-                                                //for sms service
-    // const Submit = async (data) => {
-    // setLoading(true);
-    // try {
-    //         const res = await fetch('https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZiMDYzNzA0MzY1MjY0NTUzYzUxMzci_pc', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //             },
-    //             body: JSON.stringify(data)
-    //         });
-
-    //         if (res.ok) {
-    //             alert("SMS Triggered via Pabbly!");
-    //         } else {
-    //             alert("Something went wrong.");
-    //         }
-    //     } catch (error) {
-    //         alert("Error: " + error.message);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
-
-
     useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -122,8 +97,10 @@ const Home=()=>{
     return () => observer.disconnect();
 }, []);
 
-
-    window.scrollTo(0, 0);
+    useEffect(()=>{
+        window.location.hash="";
+        window.scrollTo(0, 0);
+    },[])
     
     return(
         <div className="dark:bg-gray-900 dark:text-white">
