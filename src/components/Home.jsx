@@ -12,7 +12,7 @@ import Bootstrap from '../assets/Bootstrap_logo.webp'
 import Face from '../assets/Face Recorg.webp'
 import commerce from '../assets/E-commerce.webp'
 import Disease from '../assets/Disease.webp'
-import Hostel from '../assets/Hostel.webp'
+import Video from '../assets/videoTube.webp'
 import weather from '../assets/Weather.webp'
 import tool from '../assets/ai tool.webp'
 import smart from '../assets/co curricular.webp'
@@ -341,11 +341,11 @@ const Home=()=>{
                 <p className="text-center mt-3">Here are some of my recent project.Each project was carefully crafted with attention to detail,performance and user experience</p>
                 <div id="project" className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mb-10 md:w-11/12 m-auto">
                     {[
-                        { src: Blog, alt: "Blog-Post project",link:"https://full-stack-blogging-platform-pied.vercel.app/" },
+                        { src: Blog, alt: "Blog-Post project",link:"https://full-stack-blogging-platform-pied.vercel.app" },
                         { src: Face, alt: "face-recorgnition project",link:"https://github.com/springboardmentor136/Visionary-Advanced-Image-Recognition-for-the-Next-Era/tree/main" },
-                        { src: Hostel, alt: "Hostel-manage project",link:"https://github.com/Sarvesh7617/Hostel-managemen-Portal" },
+                        { src: Video, alt: "video stream project",link:"https://video-tube-sigma.vercel.app" },
                         { src: Disease, alt: "Disease-predict project",link:"https://github.com/Sarvesh7617/Multiple_Disease_Prediction_Using_Machine_Learning" },
-                        { src: weather, alt: "weather project",link:"https://weather-node-usi5-74i64podm-sarvesh-soni-s-projects.vercel.app/" },
+                        { src: weather, alt: "weather project",link:"https://weather-node-usi5-74i64podm-sarvesh-soni-s-projects.vercel.app" },
                         { src: commerce, alt: "e-commerce project",link:"https://github.com/Sarvesh7617/BootStrap_E-commerce_Website" }
                     ].map((item,index)=>(
                         <motion.div
@@ -390,10 +390,10 @@ const Home=()=>{
                                 <p>Real-time facial recognition system using Python, TensorFlow, and OpenCV to identify individuals via laptop camera.</p>
                             </div>
                             )}
-                            {(item.src===Hostel) && (
+                            {(item.src===Video) && (
                             <div className="text-justify w-fit">
-                                <h1 className="text-center font-bold">Hostel Management System (College DBMS Project)</h1>
-                                <p>A Tkinter-based hostel management app using MySQL for student registration, room booking, and admin control. Built in Python with real-time data handling and a user-friendly interface.</p>
+                                <h1 className="text-center font-bold">Video Streaming Platform (FullStack)</h1>
+                                <p>VideoTube is a modern full-stack video streaming platform inspired by YouTube, offering secure user authentication with JWT and bcrypt, seamless video uploads via Multer, and smooth Cloudinary-powered streaming. Built with React, TailwindCSS, and Redux Toolkit, it delivers a fast, responsive UI backed by a scalable Express and MongoDB server.</p>
                             </div>
                             )}
                             {(item.src===Disease) && (
