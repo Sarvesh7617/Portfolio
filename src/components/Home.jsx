@@ -124,14 +124,14 @@ const Home=()=>{
     return(
         <div className="dark:bg-gray-900 dark:text-white">
             <div id="home" className="flex flex-col md:flex-row items-center justify-between gap-20 px-10 pt-20">
-                <section className="md:pt-0 p-20 flex justify-center">
+                <section className="md:pt-0 pt-10 flex justify-center">
                     <div className="relative">
 
                         <div className="absolute inset-0 rounded-full bg-red-400 dark:bg-yellow-300 blur-xl animate-pulse"></div>
 
                         <img 
                         src={Myimage} alt="Profile pic"
-                        className="relative z-10 rounded-full sm:w-[400px] sm:h-[500px] border-2 border-black dark:border-white hover:scale-103 transition-transform duration-300"
+                        className="relative z-10 rounded-full min-w-[300px] min-h-[400px] md:w-[400px] md:h-[500px] border-2 border-black dark:border-white hover:scale-103 transition-transform duration-300"
                         />
                     </div>
                 </section>
@@ -140,15 +140,14 @@ const Home=()=>{
                 <section className="md:w-1/2 text-center md:text-left mt-4">
                     <h1 className="md:text-4xl mb-4">
                         <strong>
-                        Hi, it's{" "}
+                        Hi, I'm{" "}
                         <span className="text-red-500">
                             <TypeAnimation
                             sequence={[
-                                "Front End Developer", 1000,
                                 "Full Stack Developer", 1000,
                                 "DSA Expert", 1000,
                                 "Machine Learning Enthusiast", 1000,
-                                "Next.js & SQL", 1000,
+                                "Expert in MongoDB & SQL Databases", 1000,
                             ]}
                             speed={10}
                             style={{ fontStyle: "normal" }}
@@ -177,7 +176,7 @@ const Home=()=>{
                 <a href="/Sarvesh's Resume-hackerresume.pdf" target="_blank" className="text-sm sm:text-lg sm:font-bold border-2 border-red-500 bg-red-400 md:bg-transparent hover:bg-red-500 hover:scale-110 transition-transform duration-300 rounded-full p-3">Download Resume</a>
             </div> 
             <hr className="border dark:border-white border-black w-1/2 m-auto mt-10"/>
-            <div className="mt-5 mb-5 w-1/2 m-auto">
+            <div className="mt-5 mb-5 sm:w-1/2 m-auto">
                 <motion.h2 
                     id="skill" 
                     className="text-center font-bold text-xl  md:text-4xl"
@@ -247,7 +246,7 @@ const Home=()=>{
                 </div>
             </div><hr className="border dark:border-white border-black w-1/2 m-auto mt-10"/>
 
-            <div id="programming-language" className="mt-5 mb-5 w-1/2 m-auto">
+            <div id="programming-language" className="mt-5 mb-5 sm:px-0 px-5 sm:w-1/2 m-auto">
                 <motion.h2 
                   className="text-center text-xl md:text-3xl md:text-4xl font-semibold mb-4"
                   initial={{
