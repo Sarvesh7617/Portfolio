@@ -4,11 +4,13 @@ This is my personal portfolio website built with **Vite + React**, showcasing my
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-<img width="1915" height="970" alt="Screenshot 2025-08-31 205245" src="https://github.com/user-attachments/assets/53389b59-e122-473d-a8bb-8502b9e3370d" />
+<img width="1894" height="949" alt="Screenshot 2025-12-29 202006" src="https://github.com/user-attachments/assets/6f04e869-ef20-44f1-abec-471ae1aa25a2" />
+
 
 
 ### 📂 Projects Section
-<img width="1907" height="974" alt="Screenshot 2025-08-31 205421" src="https://github.com/user-attachments/assets/72e533fc-a973-4ca9-aaeb-ed6343bf3e69" />
+<img width="1882" height="959" alt="Screenshot 2025-12-29 202046" src="https://github.com/user-attachments/assets/124b3e59-7c7d-4340-aeb8-55c9015ae4a1" />
+
 
 
 
