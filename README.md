@@ -56,7 +56,7 @@ To run this project locally:
 
 1️. Clone the repository:  
 ```bash
-git clone https://github.com/Sarvesh7617/BootStrap_E-commerce_Website.git
+git clone https://github.com/Sarvesh7617/Portfolio.git
 ```
 2. Navigate to the project directory:
 ```bash
