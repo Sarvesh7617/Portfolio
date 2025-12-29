@@ -1,16 +1,101 @@
-# React + Vite
+# 💼 My Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **Vite + React**, showcasing my projects, skills, and contact information.
+## 📸 Screenshots
 
-Currently, two official plugins are available:
+### 🏠 Home Page
+<img width="1915" height="970" alt="Screenshot 2025-08-31 205245" src="https://github.com/user-attachments/assets/53389b59-e122-473d-a8bb-8502b9e3370d" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+### 📂 Projects Section
+<img width="1907" height="974" alt="Screenshot 2025-08-31 205421" src="https://github.com/user-attachments/assets/72e533fc-a973-4ca9-aaeb-ed6343bf3e69" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- Smooth animations using Framer Motion
+- Responsive design for all devices
+- Projects section with live demo link
+- Contact form with form validation
+- Dark mode support
+- 🔝 "Go to Top" button for easy navigation
+- Animated UI elements and transitions
+
+
+## 🚀 Tech Stack
+
+- ⚛️ React(Vite)
+- 🎨 Tailwind CSS
+- JavaScript (ES6+)
+
+  ## UI & Animation
+  
+- Framer Motion (animations & transitions)
+- Swiper (project carousel)
+- React Icons
+- React Type Animation
+- Hamburger React (mobile menu)
+
+ ## Forms & UX
+
+- React Hook Form
+- EmailJS
+- React Toastify (notifications)
+
+ ## Visual Effects
+ 
+- tsParticles (@tsparticles/react)
+
+
+## 🛠️ Installation
+
+To run this project locally:  
+
+1️. Clone the repository:  
+```bash
+git clone https://github.com/Sarvesh7617/BootStrap_E-commerce_Website.git
+```
+2. Navigate to the project directory:
+```bash
+cd your-portfolio
+```
+3. Install dependencies
+```bash
+npm install
+```
+4. Install dependencies
+```bash
+npm run dev
+```
+
+
+## 🔗 Live Website
+
+👉 [Click here to visit my portfolio](https://portfolio-xyik.vercel.app/#project)
+
+
+
+## 📁 Project Structure
+
+```bash
+public/                             # Static files served directly
+│
+src/                                # Source code
+├── assets/                         # Resume pdf
+├── components/                     # Reusable React components
+│   ├── particle/
+│   │   └── Particle.jsx            # Background particle animation(tsParticles)
+│   ├── Header.jsx                  # Handles section navigation and active section highlight
+│   ├── Home.jsx                    # Contains all portfolio sections (Hero, About, Skills, Projects, Contact)
+│   ├── Carousal.jsx                # Project slider / carousel component (Swiper)
+│   ├── Footer.jsx                  # Footer section with social links and copyright
+│   ├── GototopBtn.jsx              # Floating button to smoothly scroll back to top
+│   ├── ThemeBtn.jsx                # Dark / Light mode toggle button
+│   ├── ThemeProvider.jsx           # Context provider for theme state (dark / light)
+│   └── UseContext.js               # Custom React context for global state management
+├── App.jsx                         # Combines Header, Home, Footer and global UI elements
+├── App.css                         # App-specific styles (if any beyond Tailwind)
+├── index.css                       # Tailwind base styles
+└── main.jsx                        # Entry point for React
+```
