@@ -103,13 +103,12 @@ const Home=()=>{
 
         return () => observer.disconnect();
     }, []);
-
-    window.scrollTo(0, 0);
  
     useEffect(() => {
         if (loaded === images.length && stripRef.current)
             setStripWidth(stripRef.current.scrollWidth);
         }, [loaded]);
+
         const images = [ 
             { src: Java, alt: "Java image" }, 
             { src: Html, alt: "HTML image" }, 

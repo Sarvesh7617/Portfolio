@@ -1,8 +1,6 @@
-import React from "react";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import '../App.css'
 import { useState,useEffect } from "react";
-import {useNavigate} from 'react-router-dom'
 
 
 const GototopBtn=({setSection})=>{
