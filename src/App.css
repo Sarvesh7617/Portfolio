@@ -1,0 +1,25 @@
+.slow-bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.gototop
+{
+    animation:gototop 0.5s linear infinite alternate-reverse
+}
+
+
+@keyframes gototop
+{
+    0%{transform:translateY(-0.5rem)};
+
+    100%{transform:translateY(1rem)}
+}
