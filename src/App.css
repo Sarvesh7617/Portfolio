@@ -23,3 +23,53 @@
 
     100%{transform:translateY(1rem)}
 }
+
+
+
+
+@keyframes snakeRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.snake-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.snake-border::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    #ff2d95 0deg,
+    #ff2d95 90deg,
+    transparent 100deg, 
+    transparent 180deg, 
+    #ff2d95 190deg, 
+    #ff2d95 270deg, 
+    transparent 280deg, 
+    transparent 360deg
+  );
+  animation: snakeRotate 5s linear infinite;
+  filter: drop-shadow(0 0 10px #ff2d95);
+  z-index:0;
+}
+
+.snake-border::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: inherit;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+
+.snake-content {
+  position: relative;
+  z-index: 1;
+}

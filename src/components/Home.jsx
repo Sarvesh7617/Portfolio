@@ -469,7 +469,7 @@ const Home=()=>{
                 </motion.h2>
                 <div className="flex flex-col md:flex-row items-start justify-evenly gap-5 w-full overflow-hidden">
                     <motion.div 
-                      className="bg-black/30 text-white p-5 rounded-lg flex flex-col items-center w-full md:w-1/2 md:mt-16"
+                      className="snake-border dark:bg-black bg-gray-400 text-white p-5 rounded-lg flex flex-col items-center w-full md:w-1/2 md:mt-16"
                       initial={{ 
                         opacity: 0, 
                         x: -100 
@@ -484,46 +484,48 @@ const Home=()=>{
                     }}
                       transition={{ duration: 1 }}
                     >
-                    <p className="font-semibold mb-5 text-center w-full">Contact Information</p>
-                    <div className="space-y-4 w-full sm:w-fit">
+                    <div className="snake-content">
+                        <p className="font-semibold mb-5 text-center w-full">Contact Information</p>
+                        <div className="space-y-4 w-full sm:w-fit">
 
-                        <div className="flex flex-col lg:flex-row items-center sm:justify-between gap-2 text-center">
-                            <MdOutlineMail className="flex-shrink-0 text-purple-600 text-3xl bg-white rounded-full h-10 w-10 p-2" />
-                            <div className="flex flex-col sm:items-center w-full">
-                                <label>Email</label>
-                                <a href="mailto:shubhamsoni1231@rediffmail.com" className="break-words hover:text-indigo-500">
-                                    shubhamsoni1231@rediffmail.com
-                                </a>
+                            <div className="flex flex-col lg:flex-row items-center sm:justify-between gap-2 text-center">
+                                <MdOutlineMail className="flex-shrink-0 text-purple-600 text-3xl bg-white rounded-full h-10 w-10 p-2" />
+                                <div className="flex flex-col sm:items-center w-full">
+                                    <label>Email</label>
+                                    <a href="mailto:shubhamsoni1231@rediffmail.com" className="break-words hover:text-indigo-500">
+                                        shubhamsoni1231@rediffmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div className="flex flex-col lg:flex-row items-center sm:justify-between gap-2 w-full text-center">
+                                <IoCallOutline className="text-purple-600 text-3xl bg-white rounded-full h-10 w-10 p-2" />
+                                <div className="flex flex-col items-center w-full">
+                                    <label>Phone</label>
+                                    <a href="tel:+917617878976" className="break-words hover:text-indigo-500">
+                                    +91 7617878976
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="flex flex-col lg:flex-row items-center sm:justify-between gap-2 w-full text-center">
+                                <CiLocationOn className="text-purple-600 text-3xl bg-white rounded-full h-10 w-10 p-2" />
+                                <div className="flex flex-col items-center w-full">
+                                    <label>Location</label>
+                                    <p className="break-words">Sultanpur, Uttar Pradesh, India</p>
+                                </div>
                             </div>
                         </div>
-
-
-                        <div className="flex flex-col lg:flex-row items-center sm:justify-between gap-2 w-full text-center">
-                            <IoCallOutline className="text-purple-600 text-3xl bg-white rounded-full h-10 w-10 p-2" />
-                            <div className="flex flex-col items-center w-full">
-                                <label>Phone</label>
-                                <a href="tel:+917617878976" className="break-words hover:text-indigo-500">
-                                +91 7617878976
-                                </a>
-                            </div>
+                        <div className="flex flex-wrap gap-6 justify-center items-center mt-5">
+                            <a href="https://wa.me/917617878976" target="_blank" title="whatapp page"><i className="fa-brands fa-whatsapp text-4xl text-center hover:scale-110 sm:bg-transparent text-green-500 transition duration-300 cursor-pointer"></i></a>
+                            <a href="mailto:shubhamsoni1231@rediffmail.com" title="mail"><i className="fas fa-envelope text-3xl text-red-500 text-center hover:scale-110 sm:bg-transparent transition duration-300 cursor-pointer"></i></a>
                         </div>
-                        <div className="flex flex-col lg:flex-row items-center sm:justify-between gap-2 w-full text-center">
-                            <CiLocationOn className="text-purple-600 text-3xl bg-white rounded-full h-10 w-10 p-2" />
-                            <div className="flex flex-col items-center w-full">
-                                <label>Location</label>
-                                <p className="break-words">Sultanpur, Uttar Pradesh, India</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap gap-6 justify-center items-center mt-5">
-                        <a href="https://wa.me/917617878976" target="_blank" title="whatapp page"><i className="fa-brands fa-whatsapp text-4xl text-center hover:scale-110 sm:bg-transparent text-green-500 transition duration-300 cursor-pointer"></i></a>
-                        <a href="mailto:shubhamsoni1231@rediffmail.com" title="mail"><i className="fas fa-envelope text-3xl text-red-500 text-center hover:scale-110 sm:bg-transparent transition duration-300 cursor-pointer"></i></a>
                     </div>
                     </motion.div>
 
                     <motion.form
                         onSubmit={handleSubmit(Submit)}
-                        className="bg-black/30 flex flex-col items-start p-5 rounded-lg w-full md:w-1/2 mb-10"
+                        className="snake-border dark:bg-black bg-gray-400 flex flex-col items-start p-5 rounded-lg w-full md:w-1/2 mb-10"
                         initial={{ 
                             opacity: 0, 
                             x: 100 
@@ -538,65 +540,67 @@ const Home=()=>{
                         }}
                         transition={{ duration: 1 }}
                     >
-                    <p className="text-white text-md font-semibold mb-5 w-full text-center text-center">Send Message</p>
-                    <div className="space-y-5 w-full">
+                    <div className="snake-content w-full">
+                        <p className="text-white text-md font-semibold mb-5 w-full text-center text-center">Send Message</p>
+                        <div className="space-y-5 w-full">
 
-                        <span className="flex flex-col gap-1 w-full">
-                            <label>Full Name</label>
-                            <input
-                            type="text"
-                            placeholder="Enter your full name"
-                            {...register('name', { required: "Please enter name" })}
-                            className="text-black dark:text-white text-md border-2 border-gray-100 rounded-md p-2 w-full"
-                            />
-                            {errors.name && (
-                            <p className="text-red-500 text-sm -mt-1">{errors.name.message}</p>
-                            )}
-                        </span>
+                            <span className="flex flex-col gap-1 w-full">
+                                <label>Full Name</label>
+                                <input
+                                type="text"
+                                placeholder="Enter your full name"
+                                {...register('name', { required: "Please enter name" })}
+                                className="text-black dark:text-white text-md border-2 border-gray-100 rounded-md p-2 w-full"
+                                />
+                                {errors.name && (
+                                <p className="text-red-500 text-sm -mt-1">{errors.name.message}</p>
+                                )}
+                            </span>
 
-                        <span className="flex flex-col gap-1 w-full">
-                            <label>Email</label>
-                            <input
-                            type="email"
-                            placeholder="Enter your email"
-                            {...register('email', {
-                                required: "Please enter email",
-                                validate: {
-                                matchPatern: (value) =>
-                                    /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(value) ||
-                                    "Email address must be a valid address",
-                                },
-                            })}
-                            className="text-black dark:text-white text-md border-2 border-gray-100 rounded-md p-2 w-full"
-                            />
-                            {errors.email && (
-                            <p className="text-red-500 text-sm -mt-1">{errors.email.message}</p>
-                            )}
-                        </span>
+                            <span className="flex flex-col gap-1 w-full">
+                                <label>Email</label>
+                                <input
+                                type="email"
+                                placeholder="Enter your email"
+                                {...register('email', {
+                                    required: "Please enter email",
+                                    validate: {
+                                    matchPatern: (value) =>
+                                        /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(value) ||
+                                        "Email address must be a valid address",
+                                    },
+                                })}
+                                className="text-black dark:text-white text-md border-2 border-gray-100 rounded-md p-2 w-full"
+                                />
+                                {errors.email && (
+                                <p className="text-red-500 text-sm -mt-1">{errors.email.message}</p>
+                                )}
+                            </span>
 
-                        <span className="flex flex-col gap-1 w-full">
-                            <label>Your Message</label>
-                            <textarea
-                            placeholder="Enter your message"
-                            {...register("message", { required: "Please enter your message" })}
-                            className="text-black dark:text-white text-md border-2 border-gray-100 rounded-md p-2 w-full"
-                            />
-                            {errors.message && (
-                            <p className="text-red-500 text-sm -mt-1">{errors.message.message}</p>
-                            )}
-                        </span>
+                            <span className="flex flex-col gap-1 w-full">
+                                <label>Your Message</label>
+                                <textarea
+                                placeholder="Enter your message"
+                                {...register("message", { required: "Please enter your message" })}
+                                className="text-black dark:text-white text-md border-2 border-gray-100 rounded-md p-2 w-full"
+                                />
+                                {errors.message && (
+                                <p className="text-red-500 text-sm -mt-1">{errors.message.message}</p>
+                                )}
+                            </span>
 
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            className="w-full p-2 rounded-md transition-transform hover:bg-purple-500 hover:cursor-pointer hover:scale-105 duration-300 flex gap-1 items-center border-2 border-gray-300 bg-purple-400 justify-center"
-                        >
-                            {loading ? "Sending..." : (
-                            <>
-                            Send Message <FiSend />
-                            </>
-                            )}
-                        </button>
+                            <button
+                                type="submit"
+                                disabled={loading}
+                                className="w-full p-2 rounded-md transition-transform hover:bg-purple-500 hover:cursor-pointer hover:scale-105 duration-300 flex gap-1 items-center border-2 border-gray-300 bg-purple-400 justify-center"
+                            >
+                                {loading ? "Sending..." : (
+                                <>
+                                Send Message <FiSend />
+                                </>
+                                )}
+                            </button>
+                        </div>
                     </div>
                     </motion.form>
                 </div>
