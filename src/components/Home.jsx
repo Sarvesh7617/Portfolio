@@ -323,7 +323,7 @@ const Home=()=>{
                         { src: Face, alt: "face-recorgnition project",link:"https://github.com/springboardmentor136/Visionary-Advanced-Image-Recognition-for-the-Next-Era/tree/main" },
                         { src: Video, alt: "video stream project",link:"https://video-tube-sigma.vercel.app" },
                         { src: Disease, alt: "Disease-predict project",link:"https://github.com/Sarvesh7617/Multiple_Disease_Prediction_Using_Machine_Learning" },
-                        { src: weather, alt: "weather project",link:"https://weather-node-usi5-74i64podm-sarvesh-soni-s-projects.vercel.app" },
+                        { src: weather, alt: "weather project",link:"https://weather-node-usi5.vercel.app" },
                         { src: commerce, alt: "e-commerce project",link:"https://github.com/Sarvesh7617/BootStrap_E-commerce_Website" }
                     ].map((item,index)=>(
                         <motion.div
