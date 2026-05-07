@@ -66,7 +66,7 @@ cd your-portfolio
 ```bash
 npm install
 ```
-4. Install dependencies
+4. Run the project
 ```bash
 npm run dev
 ```
