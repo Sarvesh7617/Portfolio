@@ -26,8 +26,7 @@ const Header=({activeSec,setSection})=>{
             <div className="md:hidden flex items-center gap-3">
                 <ThemeBtn/>
                 <div className="border-2 rounded-lg">
-                    <Hamburger size={25} toggled={open} toggle={setOpen}
-                    />
+                    <Hamburger size={22} toggled={open} toggle={setOpen}/>
                 </div>
             </div>
             <nav className="hidden md:flex">

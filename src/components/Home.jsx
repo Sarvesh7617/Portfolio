@@ -10,7 +10,7 @@ import appwrite from '../assets/appwrite.webp'
 import Python from '../assets/python logo.webp'
 import Bootstrap from '../assets/Bootstrap_logo.webp'
 import Face from '../assets/Face Recorg.webp'
-import commerce from '../assets/E-commerce.webp'
+import anonymous from '../assets/anonymous.webp'
 import Disease from '../assets/Disease.webp'
 import Video from '../assets/videoTube.webp'
 import weather from '../assets/Weather.webp'
@@ -39,7 +39,8 @@ import Node from "../assets/node.webp";
 import Express from "../assets/express.webp";
 import Mongo from "../assets/mongo.webp";
 import Sql from "../assets/sql.webp";
-
+import Next from "../assets/nextjs.webp";
+import Ts from "../assets/ts.webp";
 
 
 const Home=()=>{
@@ -118,7 +119,10 @@ const Home=()=>{
             { src: Bootstrap, alt: "Bootstrap image" }, 
             { src: Node, alt: "Node.js image" }, 
             { src: Express, alt: "Express.js image" },  
-            { src: Sql, alt: "Mysql image" }, 
+            { src: Sql, alt: "Mysql image" },
+            { src: Next, alt: "Nextjs image" },
+            { src: Ts, alt: "typescript image" },
+
         ];
     
     return(
@@ -138,7 +142,7 @@ const Home=()=>{
 
 
                 <section className="md:w-1/2 text-center md:text-left mt-4">
-                    <h1 className="md:text-4xl mb-4">
+                    <h1 className="text-2xl md:text-4xl mb-4">
                         <strong>
                         Hi, I'm{" "}
                         <span className="text-red-500">
@@ -146,7 +150,7 @@ const Home=()=>{
                             sequence={[
                                 "Full Stack Developer", 1000,
                                 "DSA Expert", 1000,
-                                "Machine Learning Enthusiast", 1000,
+                                "AI Tools Specialist (GPT, Copilot)", 1000,
                                 "Expert in MongoDB & SQL Databases", 1000,
                             ]}
                             speed={10}
@@ -231,12 +235,12 @@ const Home=()=>{
                     >
                         {images.map((item, index) => (
                             <div key={index} className="bg-white p-4 rounded-lg">
-                            <img
-                                src={item.src}
-                                alt={item.alt}
-                                className="max-w-16 max-h-16 rounded-full"
-                                onLoad={() => setLoaded((prev) => prev + 1)}
-                            />
+                                <img
+                                    src={item.src}
+                                    alt={item.alt}
+                                    className="max-w-16 max-h-16 rounded-full"
+                                    onLoad={() => setLoaded((prev) => prev + 1)}
+                                />
                             </div>
                         ))}
                         <img src={Mongo} alt="Mongo image" className="max-w-25 max-h-30 rounded-md bg-gray-500"/>
@@ -267,8 +271,9 @@ const Home=()=>{
                 <div>
                     {[
                         { name: "Javascript", progress: "90" },
-                        { name: "HTML", progress: "95" },
-                        { name: "CSS/TAILWIND", progress: "95" },
+                        { name: "TypeScript", progress: "95" },
+                        { name: "C++", progress: "100" },
+                        { name: "Python", progress: "80" },
                     ].map((lang, index) => (
                     <motion.div 
                       className="m-auto mb-5 sm:w-full" key={index}
@@ -324,7 +329,7 @@ const Home=()=>{
                         { src: Video, alt: "video stream project",link:"https://video-tube-sigma.vercel.app" },
                         { src: Disease, alt: "Disease-predict project",link:"https://github.com/Sarvesh7617/Multiple_Disease_Prediction_Using_Machine_Learning" },
                         { src: weather, alt: "weather project",link:"https://weather-node-usi5.vercel.app" },
-                        { src: commerce, alt: "e-commerce project",link:"https://github.com/Sarvesh7617/BootStrap_E-commerce_Website" }
+                        { src: anonymous, alt: "anonymous message platform",link:"https://anonymous-message-platform.vercel.app" }
                     ].map((item,index)=>(
                         <motion.div
                             key={index}
@@ -386,11 +391,11 @@ const Home=()=>{
                                 <p>A responsive weather web app using the OpenWeather API to display real-time temperature, humidity, and wind data with dynamic UI updates. Built with HTML, CSS, and JavaScript.</p>
                             </div>
                             )}
-                            {(item.src===commerce) && (
-                            <div className="text-justify w-fit p-2 sm:-mt-7">
+                            {(item.src===anonymous) && (
+                            <div className="text-justify w-fit p-2">
                                 <img src={item.src} className="mb-5"/>
-                                <h1 className="text-center font-bold">Modern E-commerce Shopping Website</h1>
-                                <p>A responsive online shopping platform built with HTML, CSS, Bootstrap, and JavaScript. Features include product categories, shopping cart, checkout flow, and a secure payment interface.</p>
+                                <h1 className="text-center font-bold">Anonymous Message Platform</h1>
+                                <p>Developed a full-stack anonymous messaging platform using Next.js with secure authentication via NextAuth, email verification, and AI-powered message suggestions. Designed a modern dashboard for managing messages with responsive UI.</p>
                             </div>
                             )}
                             <a href={item.link} target="_blank" className="border-2 border-black rounded-md text-blue-500 text-sm md:text-normal font-semibold p-1 hover:cursor-pointer hover:scale-105 transition-transform duration-300 my-2">
